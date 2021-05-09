@@ -16,10 +16,16 @@ myString = "Hello World";
 myNum = 7777;
 myBool = false;
 
+
 strArray = ['Hello','World'];
 numArray = [1,2,3];
 boolArray = [true, false, true];
+let strNumTuple : [string, number];
 
-console.log(strArray);
-console.log(numArray);
-console.log(boolArray);
+strNumTuple = ["Hello", 4]
+
+console.log(strNumTuple);
+
+// console.log(strArray);
+// console.log(numArray);
+// console.log(boolArray);
