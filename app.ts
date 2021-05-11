@@ -22,8 +22,11 @@ const person : {
     role : [2, 'author'] // 0인덱스 Number, 1인덱스 String
 };
 
-person.role.push('admin');
-// person.role[1] = 10;
+person.role.push('admin'); // tuple에서는 push 예외조항
+// person.role[1] = 10; // 에러 발생
+// // push에서는 예외가 되지만 배열생성후 길이가 tuple이상일시
+// // TypeScript에서 에러표
+// person.role = [0,'admin', 'user'] // 에러 발생
 
 // favoriteActivities변수에 원소가 string인 배열 생성
 let favoriteActivities: string[];
