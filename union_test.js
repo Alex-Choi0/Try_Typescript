@@ -1,5 +1,7 @@
 // // 보통 하나의 속성을 정의하지만
 // // union은 복스의 속성을 정의한다.
+// input1의 변수 선언을 number|string대시
+// veriAble로 대체한다.
 function combine(input1, input2) {
     var result; // return할 변수 선언
     // input1이 number일 경우 if문 실행

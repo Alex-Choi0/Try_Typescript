@@ -1,7 +1,13 @@
 // // 보통 하나의 속성을 정의하지만
 // // union은 복스의 속성을 정의한다.
 
-function combine(input1: number|string, input2: number){
+// Type을 veriAble에 지정한다.
+// 재사용이 가능하다.
+type veriAble = number|string;
+
+// input1의 변수 선언을 number|string대시
+// veriAble로 대체한다.
+function combine(input1: veriAble, input2: number){
     let result; // return할 변수 선언
 
     // input1이 number일 경우 if문 실행
