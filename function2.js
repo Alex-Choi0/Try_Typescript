@@ -22,11 +22,13 @@ function addAndHandle(n1, n2, cb) {
 }
 console.log("addAndHandle Function 사용 : addAndHandle(5,2,app)");
 addAndHandle(5, 2, app);
+
 // Arrow Function을 콜백으로 사용해도 동일한 결과가 나옴
 addAndHandle(5, 2, function (result) {
     result *= result;
     console.log("num1의 제곱근 : ", result);
 });
+
 // // 한개의 숫자를 받아서 "Result : [num]"으로 출력
 // function printString(num : number) : string{
 //     console.log("Result : ", num);
